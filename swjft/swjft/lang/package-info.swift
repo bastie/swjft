@@ -6,4 +6,4 @@
 //  Copyright © 2015 Sebastian Ritter. All rights reserved.
 //
 
-public struct lang {}
+public struct lang{}

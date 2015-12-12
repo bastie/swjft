@@ -6,11 +6,8 @@
 //  Copyright © 2015 Sebastian Ritter. All rights reserved.
 //
 
-import Foundation
-
-protocol swjftCharSequence {}
+public protocol swjftCharSequence{}
 
 extension lang {
-    typealias CharSequence = swjftCharSequence
+    public typealias CharSequence = swjftCharSequence
 }
-

@@ -35,3 +35,6 @@ Carthage/Build
 # system files
 .DS_Store
 
+# project files
+swjft/swjft.xcodeproj/
+
