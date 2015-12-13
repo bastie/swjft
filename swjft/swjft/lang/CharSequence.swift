@@ -6,7 +6,9 @@
 //  Copyright © 2015 Sebastian Ritter. All rights reserved.
 //
 
-public protocol swjftCharSequence{}
+public protocol swjftCharSequence{
+    func charAt (index : Int) -> Character
+}
 
 extension lang {
     public typealias CharSequence = swjftCharSequence

@@ -21,5 +21,13 @@ extension lang {
             delegate = otherString
         }
         
+        public override func toString() -> Swift.String {
+            return delegate
+        }
+        
+        public func charAt(index: Int) -> Character {
+            let location = delegate.startIndex.advancedBy(index)
+            return delegate[location]
+        }
     }
 }
