@@ -8,17 +8,18 @@
 
 extension lang {
     
-    public class String : CharSequence {
+    public class String : Object, CharSequence {
         private var delegate : Swift.String
         
-        public init () {
+        public override init () {
             delegate = ""
         }
         public init (other : String) {
             delegate = other.delegate
         }
-        public init (other : Swift.String) {
-            delegate = other
+        public init (otherString : Swift.String) {
+            delegate = otherString
         }
+        
     }
 }
