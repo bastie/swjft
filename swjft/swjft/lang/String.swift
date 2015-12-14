@@ -5,6 +5,7 @@
 //  Created by Sebastian Ritter on 12.12.15.
 //  Copyright © 2015 Sebastian Ritter. All rights reserved.
 //
+import Foundation;
 
 extension lang {
     
@@ -28,6 +29,15 @@ extension lang {
         public func charAt(index: Int) -> Character {
             let location = delegate.startIndex.advancedBy(index)
             return delegate[location]
+        }
+        
+        public func length() -> Int {
+            return delegate.characters.count
+        }
+        
+        public func subSequence(start: Int, end: Int) -> swjftCharSequence {
+            let substring = delegate.substringWithRange(delegate.startIndex.advancedBy(start)..<delegate.endIndex.advancedBy(end-length()))
+            return lang.String (otherString: substring)
         }
     }
 }
