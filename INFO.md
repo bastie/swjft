@@ -11,8 +11,10 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 |lang.Appendable        |✅            |✅                  |
 |lang.AutoCloseable     |✅            |✅                  |
 |lang.CharSequence      |✅            |❌                  |
-|lang.Class             |⚠️ | ㊙️|
-|lang.Exception         |⚠️ | ㊙️|
-|lang.Object            |⚠️ | ㊙️|
-|lang.String            |⚠️ | ❌|
-|lang.Throwable         |⚠️ | ㊙️|
+|lang.Class             |⚠️            |㊙️                  |
+|lang.Cloneable         |✅            |✅                  |
+|lang.Comparable        |✅            |✅                  |
+|lang.Exception         |⚠️            |㊙️                  |
+|lang.Object            |⚠️            |㊙️                  |
+|lang.String            |⚠️            |❌                  |
+|lang.Throwable         |⚠️            |㊙️                  |
