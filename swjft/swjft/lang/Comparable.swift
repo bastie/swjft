@@ -11,5 +11,5 @@ public protocol swjftComparable {
 }
 
 extension lang {
-    typealias Comparable = swjftComparable
+    public typealias Comparable = swjftComparable
 }

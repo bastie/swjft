@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol swjftAppendable{
+public protocol swjftAppendable{
     func append (newChar : Character)
     func append (newCharSequence : lang.CharSequence)
     func append (newCharSequence : lang.CharSequence, start : Int, end : Int)
 }
 
 extension lang {
-    typealias Appendable = swjftAppendable
+    public typealias Appendable = swjftAppendable
 }

@@ -15,6 +15,8 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 |lang.Cloneable         |✅            |✅                  |
 |lang.Comparable        |✅            |✅                  |
 |lang.Exception         |⚠️            |㊙️                  |
+|lang.Iterable          |✅            |✅                  |
 |lang.Object            |⚠️            |㊙️                  |
 |lang.String            |⚠️            |❌                  |
 |lang.Throwable         |⚠️            |㊙️                  |
+|util.Iterator          |❌            |㊙️                  |

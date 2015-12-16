@@ -7,10 +7,10 @@
 //
 
 import Foundation
-protocol swjftAutoCloseable {
+public protocol swjftAutoCloseable {
     func close()
 }
 
 extension lang {
-    typealias AutoCloseable = swjftAutoCloseable
+    public typealias AutoCloseable = swjftAutoCloseable
 }
