@@ -22,7 +22,7 @@ protocol swjftCharSequence {}
 extension lang {
   typealias CharSequence = swjftCharSequence
 }
-``
+```
 
 ### Hot to create abstract classes
 
@@ -40,4 +40,4 @@ extension swjftCharBuffer {
      return "Like default methods, I am the CharBuffer implementation."
   }
 }
-``
+```
