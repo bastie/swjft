@@ -1,22 +1,29 @@
 # Swjft
 
-Test to port mature mostly object orientend API to Swift. Take a look to [JavApi Project](http://javapi.codeplex.com "Java API porting to .net").
+Swjft is a simple port of Java API. For a long time I do this for CSharp in [JavApi project](http://javapi.codeplex.com "Java API porting to .net").
 
-## Stateinformations
+## informations
 
-Full implemented is marked as ✅, parttime implemented is marking with ⚠️ and not implemented / planned tells you the ❌ symbol. Symbol ㊙️ tells working or not is not checked - a secret.
+### implementations
 
-| *Swjft type*          | *JDK 7 core* | *JDK 8 extensions* |
-|:----------------------|:------------:|:------------------:|
-|lang.Appendable        |✅            |✅                  |
-|lang.AutoCloseable     |✅            |✅                  |
-|lang.CharSequence      |✅            |❌                  |
-|lang.Class             |⚠️            |㊙️                  |
-|lang.Cloneable         |✅            |✅                  |
-|lang.Comparable        |✅            |✅                  |
-|lang.Exception         |⚠️            |㊙️                  |
-|lang.Iterable          |✅            |✅                  |
-|lang.Object            |⚠️            |㊙️                  |
-|lang.String            |⚠️            |❌                  |
-|lang.Throwable         |⚠️            |㊙️                  |
-|util.Iterator          |❌            |㊙️                  |
+Full implemented is marked as ✅, parttime implemented is marking with ⚠️ and not implemented and/or planned tells you the ❌ symbol. Symbol ㊙️ tells working or not is not checked - a secret.
+
+| *Swjft type*                                   | *JDK 7* | *JDK 8 * |
+|:-----------------------------------------------|:-------:|:--------:|
+|lang.Appendable                                 |✅       |✅        |
+|lang.AutoCloseable                              |✅       |✅        |
+|lang.CharSequence                               |✅       |❌        |
+|lang.Class                                      |⚠️       |㊙️        |
+|lang.Cloneable                                  |✅       |✅        |
+|lang.Comparable                                 |✅       |✅        |
+|lang.Exception                                  |⚠️       |㊙️        |
+|lang.Iterable                                   |✅       |✅        |
+|lang.Object                                     |⚠️       |㊙️        |
+|lang.Readable                                   |✅       |✅        |
+|lang.Runnable                                   |✅       |✅        |
+|lang.String                                     |⚠️       |❌        |
+|lang.Thread                                     |❌       |㊙️        |
+|lang.Thread.UncaughtExceptionHandler            |❌       |㊙️        |
+|lang.Throwable                                  |⚠️       |㊙️        |
+|nio.CharBuffer                                  |❌       |㊙️        |
+|util.Iterator                                   |❌       |㊙️        |
