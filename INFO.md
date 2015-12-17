@@ -10,6 +10,10 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 
 | *Swjft type*                                   | *JDK 7* | *JDK 8 * |
 |:-----------------------------------------------|:-------:|:--------:|
+|io.Closeable                                    |✅       |✅        |
+|io.Flushable                                    |✅       |✅        |
+|io.IOException                                  |❌       |❌        |
+|io.OutputStream                                 |❌       |❌        |
 |lang.Appendable                                 |✅       |✅        |
 |lang.AutoCloseable                              |✅       |✅        |
 |lang.CharSequence                               |✅       |❌        |
@@ -22,6 +26,7 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 |lang.Readable                                   |✅       |✅        |
 |lang.Runnable                                   |✅       |✅        |
 |lang.String                                     |⚠️       |❌        |
+|lang.System                                     |❌       |㊙️        |
 |lang.Thread                                     |❌       |㊙️        |
 |lang.Thread.UncaughtExceptionHandler            |❌       |㊙️        |
 |lang.Throwable                                  |⚠️       |㊙️        |
