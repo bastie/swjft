@@ -11,6 +11,7 @@ import Foundation
 extension lang {
 
 	public class Exception : Throwable, ErrorType {
+    // NOT YET IMPLEMENTED
   }
     
 }
