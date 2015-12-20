@@ -10,5 +10,7 @@ import Foundation
 
 extension lang {
   public class System {
+    public let out : io.PrintStream = io.ConsolePrintStream ()
   }
+  
 }

@@ -9,6 +9,8 @@
 import Foundation
 
 public protocol swjftOutputStream : swjftAutoCloseable, swjftCloseable, swjftFlushable {
+  func close()
+  func flush() throws
 }
 extension io {
     public typealias OutputStream = swjftOutputStream
