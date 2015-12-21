@@ -33,5 +33,7 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 |lang.Thread.UncaughtExceptionHandler            |❌       |㊙️        |
 |lang.Throwable                                  |⚠️       |㊙️        |
 |nio.CharBuffer                                  |❌       |㊙️        |
+|util.Dictionary                                 |⚠️       |㊙️        |
+|util.Hashtable                                  |⚠️       |㊙️        |
 |util.Iterator                                   |❌       |㊙️        |
 |util.Properties                                 |⚠️       |㊙️        |
