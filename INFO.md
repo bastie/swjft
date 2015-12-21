@@ -11,9 +11,11 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 | *Swjft type*                                   | *JDK 7* | *JDK 8 * |
 |:-----------------------------------------------|:-------:|:--------:|
 |io.Closeable                                    |✅       |✅        |
+|io.FilterOutputStream                           |⚠️       |㊙️        |
 |io.Flushable                                    |✅       |✅        |
 |io.IOException                                  |❌       |❌        |
 |io.OutputStream                                 |❌       |❌        |
+|io.PrintStream                                  |⚠️       |㊙️        |
 |lang.Appendable                                 |✅       |✅        |
 |lang.AutoCloseable                              |✅       |✅        |
 |lang.CharSequence                               |✅       |❌        |
@@ -32,3 +34,4 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 |lang.Throwable                                  |⚠️       |㊙️        |
 |nio.CharBuffer                                  |❌       |㊙️        |
 |util.Iterator                                   |❌       |㊙️        |
+|util.Properties                                 |⚠️       |㊙️        |
