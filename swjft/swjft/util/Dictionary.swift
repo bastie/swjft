@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/* JDK Dictionary type has only abstract methods and so protocol does what we need! */
 protocol swjftDictionary {
   typealias key : Hashable
   typealias value
