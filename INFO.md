@@ -11,6 +11,7 @@ Full implemented is marked as ✅, parttime implemented is marking with ⚠️ a
 | *Swjft type*                                   | *JDK 7* | *JDK 8 * |
 |:-----------------------------------------------|:-------:|:--------:|
 |io.Closeable                                    |✅       |✅        |
+|io.File                                         |⚠️       |㊙️        |
 |io.FilterOutputStream                           |⚠️       |㊙️        |
 |io.Flushable                                    |✅       |✅        |
 |io.IOException                                  |❌       |❌        |
