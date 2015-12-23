@@ -12,7 +12,7 @@ extension io {
     
     var out : OutputStream
     
-    init (oStream : OutputStream) {
+    public init (oStream : OutputStream) {
       self.out = oStream
     }
     

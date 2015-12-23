@@ -13,14 +13,14 @@ extension io {
     
     private var pathname : String
     
-    init (aPathname : lang.String) {
+    public init (aPathname : lang.String) {
       self.pathname = aPathname.toString()
     }
-    init (newPathname : Swift.String) {
+    public init (newPathname : Swift.String) {
       self.pathname = newPathname
     }
     
-    func exists() -> Bool {
+    public func exists() -> Bool {
 			return NSFileManager.defaultManager().fileExistsAtPath("hello.swift") 
     }
   }
