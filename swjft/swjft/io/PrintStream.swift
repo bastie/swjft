@@ -10,21 +10,21 @@ import Foundation
 extension io {
   public class PrintStream : FilterOutputStream {
     
-    func print (s : Swift.String) {
+    public func print (s : Swift.String) {
       // NOT YET IMPLEMENTED
     }
-    func println () {
+    public func println () {
       // NOT YET IMPLEMENTED
     }
-    func println (s : Swift.String) {
+    public func println (s : Swift.String) {
       // NOT YET IMPLEMENTED
     }
     
     
-    func print (sl : lang.String) {
+    public func print (sl : lang.String) {
       self.print(sl.toString())
     }
-    func println (sl : lang.String) {
+    public func println (sl : lang.String) {
       self.println(sl)
     }
   }

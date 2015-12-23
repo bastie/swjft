@@ -13,7 +13,7 @@ public class swiftHashtable : swjftDictionary {
   
   private var delegate : [key:value] = [:]
   
-  init(){}
+  public init(){}
   
   public func put(k: key, v: value) {
     delegate[k] = v

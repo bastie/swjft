@@ -10,7 +10,7 @@ import Foundation
 
 extension lang {
   public class System {
-    public let out : io.PrintStream = io.ConsolePrintStream ()
+    public static let out : io.PrintStream = io.ConsolePrintStream ()
     
     public static func getProperties() -> util.Properties {
 			let props = util.Properties()
