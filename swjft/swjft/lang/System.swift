@@ -95,7 +95,7 @@ extension lang {
       task.launch()
       
       let data = pipe.fileHandleForReading.readDataToEndOfFile()
-      let output: NSString =  NSString(data: data, encoding: NSUTF8StringEncoding)!
+      let output: NSString = NSString (data: data, encoding: NSUTF8StringEncoding)!
       result = (output as Swift.String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
       
       

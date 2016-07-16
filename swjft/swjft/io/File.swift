@@ -21,7 +21,7 @@ extension io {
     }
     
     public func exists() -> Bool {
-			return NSFileManager.defaultManager().fileExistsAtPath("hello.swift") 
+			return NSFileManager.defaultManager().fileExistsAtPath(self.pathname)
     }
   }
 }

@@ -21,14 +21,13 @@ extension lang {
         public init (otherString : Swift.String) {
             delegate = otherString
         }
-        
+      
         public override func toString() -> Swift.String {
             return delegate
         }
         
         public func charAt(index: Int) -> Character {
-            let location = delegate.startIndex.advancedBy(index)
-            return delegate[location]
+          return delegate[delegate.startIndex.advancedBy(index)]
         }
         
         public func length() -> Int {
@@ -36,8 +35,9 @@ extension lang {
         }
         
         public func subSequence(start: Int, end: Int) -> swjftCharSequence {
-            let substring = delegate.substringWithRange(delegate.startIndex.advancedBy(start)..<delegate.endIndex.advancedBy(end-length()))
-            return lang.String (otherString: substring)
+          
+          let result = delegate.substringWithRange(Range(delegate.startIndex.advancedBy(start) ..< delegate.startIndex.advancedBy(end)))
+            return lang.String (otherString: result)
         }
     }
 }

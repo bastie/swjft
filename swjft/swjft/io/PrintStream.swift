@@ -18,42 +18,56 @@ extension io {
     }
     public func println (s : Swift.String) {
       // NOT YET IMPLEMENTED
+      debugPrint("I am in println (s)")
     }
     
     
     public func print (sl : lang.String) {
-      self.print(sl.toString())
+      print(sl.toString())
     }
     public func println (sl : lang.String) {
-      self.println(sl)
+      println(sl.toString())
     }
   }
-}
 
-
-/// Swift BUG (?) workaround - Bug id 23967855
-extension io {
+  //  Swift BUG (?) workaround - Bug id 23967855
   ///
   /// Implement Console output with fully delegate the work
   ///
   class ConsolePrintStream : io.PrintStream {
+    
+    let console = InternalDummySwiftPrinter ()
+    
     init() {
       super.init(oStream: NullOutputStream())
     }
     
     override func print(s: Swift.String) {
-      Swift.print(s, terminator: "")
+      console.printDummy(s)
     }
     override func println() {
-      Swift.print("")
+      console.printlnDummy()
     }
     override func println(s: Swift.String) {
-      Swift.print(s)
+      console.printlnDummy(s)
     }
   }
   /// Implement OutputStream protocol but do nothing
   class NullOutputStream : OutputStream {
     func close(){}
     func flush() throws{}
+  }
+  
+  
+  class InternalDummySwiftPrinter {
+    func printDummy(s: Swift.String) {
+			print(s, separator: "", terminator: "")
+    }
+    func printlnDummy() {
+      print("")
+    }
+    func printlnDummy(s: Swift.String) {
+      print(s)
+    }
   }
 }
