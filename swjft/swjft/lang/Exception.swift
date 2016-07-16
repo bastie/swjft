@@ -10,10 +10,8 @@ import Foundation
 
 extension lang {
 
-  // NOT YET IMPLEMENTED
 	public class Exception : Throwable {
     
-
     public override init(){super.init()}
     
     public override init(message : lang.String) {
@@ -27,7 +25,7 @@ extension lang {
     public override init (message : lang.String, cause : lang.Throwable) {
       super.init (message : message, cause : cause)
     }
-    
+    // Helper method
     public override init (detailMessage : Swift.String, cause : lang.Throwable) {
       super.init(message: lang.String(otherString: detailMessage), cause : cause)
     }
@@ -35,6 +33,7 @@ extension lang {
     public override init (cause : lang.Throwable) {
       super.init(message: cause.toStringJ(), cause : cause)
     }
+   
     /* NOT YET IMPLEMENTED - JDK 7
     public init (message : lang.String, cause : lang.Throwable, enableSuppression : Bool, writableStackTrace: Bool) {
       self.detailMessage = message
