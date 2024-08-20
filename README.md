@@ -1,3 +1,7 @@
+# see JavApi4Swift project
+
+https://github.com/bastie/JavApi4Swift
+
 # Swjft 
 
 Test to port mature mostly object orientend API to Swift. Take a look to [JavApi project](http://javapi.codeplex.com "Java API porting to .net").
